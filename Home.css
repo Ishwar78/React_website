@@ -1,0 +1,104 @@
+/* Styling for full-width banner images */
+
+.banner-img {
+  margin-top: 80px;
+  width: 100%;
+  height: auto;
+}
+
+/* Flexbox layout for product cards */
+.home-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+}
+
+.home-cards div {
+  flex: 1;
+  min-width: 200px;
+  max-width: 300px;
+  text-align: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.home-cards div img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.home-cards div:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.home-cards h3 {
+  margin-top: 10px;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.home-cards a {
+  color: #007bff;
+  text-decoration: none;
+  margin-top: 10px;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.home-cards a:hover {
+  color: #ff6347;
+}
+
+/* Image Grid styling */
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+}
+
+.image-grid img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.image-grid img:hover {
+  transform: scale(1.1);
+}
+
+/* Adjustments for other sections */
+.part, .online, .popular {
+  margin: 20px 40px;
+}
+
+.popular p {
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.part-p, .side, .online-p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .home-cards, .image-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home-cards div, .image-grid img {
+    max-width: 100%;
+  }
+}

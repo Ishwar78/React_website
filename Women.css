@@ -1,0 +1,124 @@
+/* Main container for the product grid */
+
+.mySlides{
+  margin-top: 100px;
+}
+.img2,img3,img4,img5{
+text-decoration: none;
+}
+.img {
+  
+    cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 40px;
+  }
+  
+  .img div {
+    text-align: center;
+    margin: 10px;
+  }
+  
+  .img img {
+    border-radius: 10px;
+    height: 300px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .img img:hover {
+    transform: scale(1.05);
+  }
+  
+  .slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+  }
+  
+  .mySlides {
+    display: none;
+  }
+  
+  .mySlides img {
+    width: 100%;
+    height: 400px; /* Change this to adjust the height */
+    object-fit: cover; /* Ensures the image maintains aspect ratio */
+    border-radius: 10px;
+  }
+  
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from { opacity: 0.4; }
+    to { opacity: 1; }
+  }
+  
+  
+  /* Trending section */
+  .trending-section {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+    padding: 20px;
+    background-color: rgb(224, 247, 239);
+    border-radius: 10px;
+  }
+  
+  .trending-section div {
+    text-align: center;
+  }
+  
+  .trending-section img {
+    height: 200px;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .trending-section img:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Popular searches */
+  .popular-searches {
+    margin: 20px;
+    font-size: 14px;
+    line-height: 1.8;
+    background-color: rgb(245, 245, 245);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.5s ease-in;
+  }
+  
+  /* Footer and address section */
+  .part, .online {
+    margin: 50px 30px;
+    padding: 20px;
+    background-color: rgb(240, 240, 240);
+    border-radius: 10px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .part h4, .online h4 {
+    font-weight: bold;
+  }
+  
+  .part-p, .online-p {
+    margin-top: 20px;
+    line-height: 1.6;
+  }
+  
+
+  .shop-link {
+    text-decoration: none; 
+    color: inherit; 
+  }
+  
+  .shop-link:hover {
+    color: #ff6347; 
+  }
+  

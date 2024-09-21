@@ -1,0 +1,161 @@
+/* General styling for the container and card layout */
+.home-cards {
+  margin-top: 80px;
+   background-color: rgb(226, 241, 253);
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap; /* Ensure cards wrap on smaller screens */
+   padding: 20px;
+ }
+ 
+ .home-cards div {
+   flex: 1 1 200px; /* Flexible layout */
+   margin: 15px;
+   border: 1px solid #ccc;
+   border-radius: 10px;
+   overflow: hidden;
+   background-color: #fff;
+   transition: all 0.3s ease;
+   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+   text-align: center;
+   cursor: pointer;
+ }
+ 
+ .home-cards img {
+   width: 100%;
+   height: 200px;
+   object-fit: cover;
+ }
+ 
+ .home-cards h3 {
+   font-size: 1.2rem;
+   margin: 10px 0;
+ }
+ 
+ .home-cards p {
+   font-size: 0.9rem;
+   color: #777;
+   margin-bottom: 10px;
+ }
+ 
+ /* Hover Effects */
+ .home-cards div:hover {
+   background-color: #f0f8ff;
+   transform: scale(1.05); /* Slightly enlarge on hover */
+   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+ }
+ 
+ .home-cards img:hover {
+   transform: scale(1.1); /* Zoom in image on hover */
+   transition: all 0.4s ease;
+ }
+ 
+ .home-cards h3:hover {
+   color: #0073e6; /* Change color on hover */
+ }
+ 
+ /* Bottom section styling */
+ .popular {
+   cursor: pointer;
+   font-size: 0.9rem;
+ }
+ 
+ .part {
+   margin-top: 50px;
+   margin-left: 30px;
+ }
+ 
+ .part-p {
+   margin-left: 30px;
+   font-size: 15px;
+   margin-top: 20px;
+   line-height: 30px;
+ }
+ 
+ .side {
+   position: relative;
+   left: 800px;
+   bottom: 50px;
+ }
+ 
+ .online {
+   margin-left: 30px;
+   margin-top: 50px;
+ }
+ 
+ .online-p {
+   margin-left: 30px;
+   margin-top: 20px;
+ }
+ 
+ /* Popular Searches Section */
+ h4 {
+   font-weight: bold;
+   font-size: 1.5rem;
+   margin-left: 20px;
+ }
+ 
+ hr {
+   border: 1px solid #0073e6;
+ }
+ 
+ p {
+   font-size: 0.9rem;
+   color: #555;
+ }
+ 
+ /* Footer Section */
+ .footer {
+   background-color: #0073e6;
+   color: white;
+   padding: 10px;
+   text-align: center;
+ }
+ 
+ .footer p {
+   margin: 0;
+   font-size: 0.8rem;
+ }
+ 
+ /* Carbon Section */
+ .carbon-dark {
+   background-color: #2d2d2d;
+   color: white;
+   padding: 40px 20px;
+   margin-top: 20px;
+   text-align: center;
+ }
+ 
+ .carbon-dark .content h2 {
+   font-size: 2rem;
+   margin-bottom: 10px;
+ }
+ 
+ .carbon-dark .content p {
+   font-size: 1rem;
+ }
+ 
+ /* Media Queries */
+ @media (max-width: 768px) {
+   .home-cards {
+     flex-direction: column;
+   }
+ 
+   .side {
+     left: 0;
+     bottom: 0;
+   }
+ 
+   .part {
+     margin-left: 0;
+   }
+ 
+   .online {
+     margin-left: 0;
+   }
+ 
+   .online-p {
+     margin-left: 0;
+   }
+ }
+ 
